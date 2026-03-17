@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f8fafc;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+
+.tab-btn-active {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.tab-btn-inactive {
+  background-color: #e2e8f0;
+  color: #64748b;
+}
+
+
+.job-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+ 
+}
+
+.job-card:hover {
+  border-color: teal;
+}
+
+
+.btn-animate:active {
+  transform: scale(0.92);
+}
+
+
+.status-badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
