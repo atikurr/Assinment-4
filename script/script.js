@@ -129,7 +129,7 @@ function render() {
 
     card.innerHTML = `
             <button onclick="deleteJob(${job.id})"
-                class="absolute top-4 right-4 text-gray-300 hover:text-red-500 btn-animate">
+                class="absolute top-4 right-4 text-gray-300 hover:text-red-500 btn-animate bg-base-100 rounded-full">
                <i class="fa-solid fa-trash-can"></i> 
             </button>
 
