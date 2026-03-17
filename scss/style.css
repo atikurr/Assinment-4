@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+$primary: #3B82F6;
+$gray-light: #E2E8F0;
+$text-gray: #64748B;
+$bg-main: #F8FAFC;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: $bg-main;
+}
+
+Global smooth transition
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+Tabs
+.tab-btn {
+  &-active {
+    background-color: $primary;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  &-inactive {
+    background-color: $gray-light;
+    color: $text-gray;
+  }
+}
+
+Job Card
+.job-card {
+  background-color: white;
+  border: 1px solid $gray-light;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+    border-color: $primary;
+  }
+}
+
+Button animation
+.btn-animate {
+  &:active {
+    transform: scale(0.92);
+  }
+}
+
+Status Badge
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
+
+  &.interview {
+    background-color: #DCFCE7;
+    color: #166534;
+  }
+
+  &.rejected {
+    background-color: #FEE2E2;
+    color: #991B1B;
+  }
+}
